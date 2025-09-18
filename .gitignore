@@ -1,0 +1,14 @@
+# 모든 파일을 기본적으로 무시
+*
+
+# .ipynb 파일은 추적 (Jupyter Notebook)
+!*.ipynb
+
+# .py 파일은 추적 (Python)
+!*.py
+
+# .gitignore 파일 자체도 추적
+!.gitignore
+
+# 디렉토리는 추적 가능하도록 설정
+!*/
