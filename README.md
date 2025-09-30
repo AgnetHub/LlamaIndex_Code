@@ -1,8 +1,3 @@
-좋습니다 👍 깃허브에 올릴 `README.md`는 깔끔하면서도 독자가 프로젝트를 빠르게 이해하고 활용할 수 있도록 **개요 → 챕터별 구성 → 실행 방법 → 기술 스택 → 학습 가이드** 순으로 작성하는 것이 좋습니다. 아래 예시를 제안드릴게요.
-
----
-
-````markdown
 # 📘 LlamaIndex 기반 RAG & AI Agent 실습 코드
 
 이 저장소는 책에서 다루는 **RAG(Retrieval-Augmented Generation) 시스템과 AI Agent 구현** 예제 코드를 제공합니다.  
@@ -29,12 +24,47 @@ LlamaIndex를 중심으로 다양한 검색 기법, 멀티모달 처리, 에이�
 
 ---
 
-## ⚙️ 환경 설정
+## 📥 설치 및 환경 설정
+
+### 1. 저장소 클론
+```bash
+git clone https://github.com/AgnetHub/LlamaIndex_Code.git
+cd LlamaIndex_Code
+```
+
+### 2. uv 활용 환경 세팅 (권장-최신 방법)
+uv는 초고속 Python 패키지 관리 도구입니다.
+
+```bash
+# uv 설치 (Linux/macOS)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```bash
+# Windows (PowerShell)
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+```bash
+# 가상환경 생성 및 활성화
+uv venv
+source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
+```
+
+```bash
+# 의존성 설치
+uv pip install -r requirements.txt
+```
+
+### 3. pip 활용 환경 세팅 (대안-책에서 소개한 내용)
+
 ```bash
 # 가상환경 생성 및 활성화
 python -m venv LlamaIndex_VENV
 source LlamaIndex_VENV/bin/activate   # (Windows: LlamaIndex_VENV\Scripts\activate)
+````
 
+```bash
 # 의존성 설치
 pip install -r requirements.txt
 ````
@@ -43,7 +73,6 @@ pip install -r requirements.txt
 * **예제 실행 방법**: 각 챕터 디렉토리 안의 Jupyter Notebook 또는 Python 스크립트 실행
 
 ---
-
 
 ## 🙌 기여 & 문의
 
