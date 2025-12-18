@@ -56,6 +56,13 @@ source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
 uv pip install -r requirements.txt
 ```
 
+```bash
+# 이후 기존 코드의 pip 명령어를 실행시키기 위한 pip.exe 별도 설치
+python.exe -m ensurepip --default-pip
+# pip 최신 버전으로 업그레이드
+python.exe -m pip install --upgrade pip
+```
+
 ### 3. pip 활용 환경 세팅 (대안-책에서 소개한 내용)
 
 ```bash
