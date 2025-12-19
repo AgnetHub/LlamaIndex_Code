@@ -46,6 +46,17 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 ```bash
+# uv 초기화
+uv init
+```
+
+```bash
+# uv 파이썬 버전 3.10.7으로 설정 (실습 시 의존성 이슈 해결)
+uv python pin 3.10.7
+(Get-Content pyproject.toml) -replace 'requires-python = ".*"', 'requires-python = ">=3.10.7"' | Set-Content pyproject.toml
+```
+
+```bash
 # 가상환경 생성 및 활성화
 uv venv
 source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
