@@ -129,7 +129,7 @@ nltk==3.9.1
 numpy==1.26.4
 oauthlib==3.3.1
 ollama==0.5.4
-onnxruntime==1.22.1
+onnxruntime==1.16.3
 openai==1.108.1
 openpyxl==3.1.5
 opentelemetry-api==1.37.0
@@ -216,7 +216,7 @@ torch==2.2.2
 tornado==6.5.2
 tqdm==4.67.1
 traitlets==5.14.3
-transformers==4.56.2
+transformers==4.48.0
 trio==0.30.0
 trio-websocket==0.12.2
 typer==0.19.1
@@ -237,3 +237,4 @@ wrapt==1.17.3
 wsproto==1.2.0
 yarl==1.20.1
 zipp==3.23.0
+
